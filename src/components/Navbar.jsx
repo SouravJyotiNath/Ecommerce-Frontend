@@ -148,7 +148,6 @@ const Navbar = ({ onSelectCategory, onSearch }) => {
                     Cart
                   </i>
                 </a>
-                {/* <form className="d-flex" role="search" onSubmit={handleSearch} id="searchForm"> */}
                 <input
                   className="form-control me-2"
                   type="search"
@@ -156,8 +155,8 @@ const Navbar = ({ onSelectCategory, onSearch }) => {
                   aria-label="Search"
                   value={input}
                   onChange={(e) => handleChange(e.target.value)}
-                  onFocus={() => setSearchFocused(true)} // Set searchFocused to true when search bar is focused
-                  onBlur={() => setSearchFocused(false)} // Set searchFocused to false when search bar loses focus
+                  onFocus={() => setSearchFocused(true)}
+                  onBlur={() => setSearchFocused(false)}
                 />
                 {showSearchResults && (
                   <ul className="list-group">
@@ -178,13 +177,6 @@ const Navbar = ({ onSelectCategory, onSearch }) => {
                     )}
                   </ul>
                 )}
-                {/* <button
-                  className="btn btn-outline-success"
-                  onClick={handleSearch}
-                >
-                  Search Products
-                </button> */}
-                {/* </form> */}
                 <div />
               </div>
             </div>

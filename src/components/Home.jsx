@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import AppContext from "../Context/Context";
-// import unplugged from "../assets/unplugged.png"
 
 const Home = ({ selectedCategory }) => {
   const { data, isError, addToCart, refreshData } = useContext(AppContext);
@@ -51,9 +50,7 @@ const Home = ({ selectedCategory }) => {
 
   if (isError) {
     return (
-      <h2 className="text-center" style={{ padding: "18rem" }}>
-      {/* <img src={unplugged} alt="Error" style={{ width: '100px', height: '100px' }}/> */}
-      </h2>
+      <h2 className="text-center" style={{ padding: "18rem" }}></h2>
     );
   }
   return (
